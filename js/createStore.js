@@ -8,7 +8,7 @@ function createStore(){
     function getState(){
       return state
     }
-    return { dispatch, getState}
+    return { dispatch, getState }
 
 }
 

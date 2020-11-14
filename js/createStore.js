@@ -28,7 +28,7 @@ let store = createStore()
 
 function render() {
   let container = document.getElementById('container');
-  container.textContent = store.getState.count;
+  container.textContent = store.getState().count;
 };
 
 // dispatch({ type: '@@INIT' })

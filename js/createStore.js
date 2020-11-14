@@ -30,7 +30,7 @@ function render() {
   container.textContent = store.getState().count;
 };
 
-// store.dispatch({ type: '@@INIT' })
+store.dispatch({ type: '@@INIT' })
 
 let button = document.getElementById('button');
 

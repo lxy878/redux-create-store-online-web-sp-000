@@ -25,15 +25,15 @@ function reducer(state = { count: 0 }, action) {
 
 let store = createStore()
 
+
 function render() {
   let container = document.getElementById('container');
-  container.textContent = store.getState().count;
+  container.textContent = store.getState.count;
 };
 
-store.dispatch({ type: '@@INIT' })
-
+dispatch({ type: '@@INIT' })
 let button = document.getElementById('button');
 
 button.addEventListener('click', function() {
-    store.dispatch({ type: 'INCREASE_COUNT' });
+    dispatch({ type: 'INCREASE_COUNT' });
 })

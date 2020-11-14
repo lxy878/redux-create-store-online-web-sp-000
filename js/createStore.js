@@ -8,6 +8,7 @@ function createStore(){
     function getState(){
       return state
     }
+    
     return { dispatch, getState }
 
 }

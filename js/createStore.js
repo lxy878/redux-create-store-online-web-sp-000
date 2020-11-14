@@ -22,6 +22,9 @@ function reducer(state = { count: 0 }, action) {
   }
 };
 
+let store = createStore()
+
+
 function render() {
   let container = document.getElementById('container');
   container.textContent = state.count;
